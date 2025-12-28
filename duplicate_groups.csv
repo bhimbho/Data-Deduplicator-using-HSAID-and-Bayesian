@@ -1,0 +1,315 @@
+file_hash,file_path,group_size,file_size_bytes,file_size_mb
+f118f4f92d88263026c7bf55de182639,/Users/soneyeoluwasina/Downloads/Skin/Test/actinic keratosis/ISIC_0024800.jpg,2,268818,0.26
+f118f4f92d88263026c7bf55de182639,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0024800.jpg,2,268818,0.26
+d6c59fd7e6469f481595c8e3c6f5c703,/Users/soneyeoluwasina/Downloads/Skin/Test/actinic keratosis/ISIC_0024948.jpg,2,274133,0.26
+d6c59fd7e6469f481595c8e3c6f5c703,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0024948.jpg,2,274133,0.26
+e80fc9560e27f04fac992452d7c5a827,/Users/soneyeoluwasina/Downloads/Skin/Test/actinic keratosis/ISIC_0010889.jpg,2,55730,0.05
+e80fc9560e27f04fac992452d7c5a827,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0010889.jpg,2,55730,0.05
+93dbde640711c35a3d336c13984a9d4c,/Users/soneyeoluwasina/Downloads/Skin/Test/actinic keratosis/ISIC_0024913.jpg,2,324844,0.31
+93dbde640711c35a3d336c13984a9d4c,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0024913.jpg,2,324844,0.31
+5635cc371bc14b49216890506d7d5975,/Users/soneyeoluwasina/Downloads/Skin/Test/actinic keratosis/ISIC_0024468.jpg,2,291343,0.28
+5635cc371bc14b49216890506d7d5975,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0024468.jpg,2,291343,0.28
+d34718165172d1b3236666fe96393525,/Users/soneyeoluwasina/Downloads/Skin/Test/actinic keratosis/ISIC_0024646.jpg,2,232181,0.22
+d34718165172d1b3236666fe96393525,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0024646.jpg,2,232181,0.22
+ec23d1a47448634e4e21762b79bddfe0,/Users/soneyeoluwasina/Downloads/Skin/Test/actinic keratosis/ISIC_0025605.jpg,2,249258,0.24
+ec23d1a47448634e4e21762b79bddfe0,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0025605.jpg,2,249258,0.24
+b500d2d87e69796d5334825569879120,/Users/soneyeoluwasina/Downloads/Skin/Test/actinic keratosis/ISIC_0010512.jpg,2,148623,0.14
+b500d2d87e69796d5334825569879120,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0010512.jpg,2,148623,0.14
+22b54b307eed934d20cd72157e5bbd14,/Users/soneyeoluwasina/Downloads/Skin/Test/actinic keratosis/ISIC_0024470.jpg,2,274221,0.26
+22b54b307eed934d20cd72157e5bbd14,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0024470.jpg,2,274221,0.26
+60e0f85947d6be10aeb562d523d47963,/Users/soneyeoluwasina/Downloads/Skin/Test/actinic keratosis/ISIC_0024707.jpg,2,284809,0.27
+60e0f85947d6be10aeb562d523d47963,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0024707.jpg,2,284809,0.27
+1623151f267974cce3e3c94c0e13be39,/Users/soneyeoluwasina/Downloads/Skin/Test/actinic keratosis/ISIC_0024511.jpg,2,221256,0.21
+1623151f267974cce3e3c94c0e13be39,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0024511.jpg,2,221256,0.21
+ab55a2f1393cb6eeba558d7b3fc26436,/Users/soneyeoluwasina/Downloads/Skin/Test/actinic keratosis/ISIC_0025427.jpg,2,288982,0.28
+ab55a2f1393cb6eeba558d7b3fc26436,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0025427.jpg,2,288982,0.28
+1135b0cd8337cdd5bc69544a54513f53,/Users/soneyeoluwasina/Downloads/Skin/Test/actinic keratosis/ISIC_0025368.jpg,2,235603,0.22
+1135b0cd8337cdd5bc69544a54513f53,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0025368.jpg,2,235603,0.22
+17baf5d8499df6734537891fb0a83d35,/Users/soneyeoluwasina/Downloads/Skin/Test/actinic keratosis/ISIC_0024763.jpg,2,238553,0.23
+17baf5d8499df6734537891fb0a83d35,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0024763.jpg,2,238553,0.23
+93a8cc4fc73599414c0a85eec5bbb214,/Users/soneyeoluwasina/Downloads/Skin/Test/actinic keratosis/ISIC_0024771.jpg,2,265349,0.25
+93a8cc4fc73599414c0a85eec5bbb214,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0024771.jpg,2,265349,0.25
+b0ef69632a1b5080a6bdc17d69f7b801,/Users/soneyeoluwasina/Downloads/Skin/Test/seborrheic keratosis/ISIC_0010803.jpg,2,158064,0.15
+b0ef69632a1b5080a6bdc17d69f7b801,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0010803.jpg,2,158064,0.15
+532aa4a187d39bfc9aac2c88ddcecca4,/Users/soneyeoluwasina/Downloads/Skin/Test/seborrheic keratosis/ISIC_0010808.jpg,2,189079,0.18
+532aa4a187d39bfc9aac2c88ddcecca4,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0010808.jpg,2,189079,0.18
+9729753e6ca92d892f60a6b01a742f26,/Users/soneyeoluwasina/Downloads/Skin/Test/seborrheic keratosis/ISIC_0010809.jpg,2,216205,0.21
+9729753e6ca92d892f60a6b01a742f26,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0010809.jpg,2,216205,0.21
+298981c01f56f9ac3fd699fd45933845,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011128.jpg,2,172168,0.16
+298981c01f56f9ac3fd699fd45933845,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011128.jpg,2,172168,0.16
+96a6ee86c712c1198928b1de0e80bfd7,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011077.jpg,2,230189,0.22
+96a6ee86c712c1198928b1de0e80bfd7,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011077.jpg,2,230189,0.22
+721ba2f6424f744a1527532989ce99f4,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0010977.jpg,2,181421,0.17
+721ba2f6424f744a1527532989ce99f4,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0010977.jpg,2,181421,0.17
+2512a5ed173df2637254804b111ed34d,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011112.jpg,2,196660,0.19
+2512a5ed173df2637254804b111ed34d,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011112.jpg,2,196660,0.19
+f5041d7a60ae22f485e3ebc239c248fb,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011099.jpg,2,231164,0.22
+f5041d7a60ae22f485e3ebc239c248fb,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011099.jpg,2,231164,0.22
+c77ad5e0aa02376b1bd7dd1e3b83e480,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0010812.jpg,2,234772,0.22
+c77ad5e0aa02376b1bd7dd1e3b83e480,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0010812.jpg,2,234772,0.22
+a22296d84093e9c8a00d9f91f79f8f52,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011139.jpg,2,192380,0.18
+a22296d84093e9c8a00d9f91f79f8f52,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011139.jpg,2,192380,0.18
+760957534ac17540daf56ef66ac1f133,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0010810.jpg,2,159089,0.15
+760957534ac17540daf56ef66ac1f133,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0010810.jpg,2,159089,0.15
+ddeaebc9605497cddd6dc71537006f80,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0010965.jpg,2,180382,0.17
+ddeaebc9605497cddd6dc71537006f80,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0010965.jpg,2,180382,0.17
+94e4f9566a1f25607bacc37a0ee17e69,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0010971.jpg,2,38917,0.04
+94e4f9566a1f25607bacc37a0ee17e69,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0010971.jpg,2,38917,0.04
+2a820468dc7e600f35311b35b62c3d3d,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011138.jpg,2,196164,0.19
+2a820468dc7e600f35311b35b62c3d3d,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011138.jpg,2,196164,0.19
+b72b9e87d8ac6870fe46eea2b1209d01,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011163.jpg,2,135398,0.13
+b72b9e87d8ac6870fe46eea2b1209d01,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011163.jpg,2,135398,0.13
+63e517480453a5418d9dfd69ea920a7d,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0010862.jpg,2,165423,0.16
+63e517480453a5418d9dfd69ea920a7d,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0010862.jpg,2,165423,0.16
+91b3ae51911b2d4fca8d8428e3024883,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0010876.jpg,2,164468,0.16
+91b3ae51911b2d4fca8d8428e3024883,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0010876.jpg,2,164468,0.16
+bab16e71da2e2ba98977529db3047832,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0010863.jpg,2,187724,0.18
+bab16e71da2e2ba98977529db3047832,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0010863.jpg,2,187724,0.18
+94fbd086e4164bfa0655f8bf8baefc2d,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0010917.jpg,2,63265,0.06
+94fbd086e4164bfa0655f8bf8baefc2d,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0010917.jpg,2,63265,0.06
+6c3fef79567729bf58682eaa3c33ce65,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0000279.jpg,2,221479,0.21
+6c3fef79567729bf58682eaa3c33ce65,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0000280.jpg,2,221479,0.21
+5a2a943757f49591dcb7b53b87d9e66c,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011176.jpg,2,156698,0.15
+5a2a943757f49591dcb7b53b87d9e66c,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011176.jpg,2,156698,0.15
+b743844c484701c0459b65d224ee84f7,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011174.jpg,2,194129,0.19
+b743844c484701c0459b65d224ee84f7,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011174.jpg,2,194129,0.19
+d5e19e891301c5273fd719d68c435fd6,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0010860.jpg,2,190344,0.18
+d5e19e891301c5273fd719d68c435fd6,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0010860.jpg,2,190344,0.18
+b8b2cfa12ebe0af268bf47aa07a413de,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0010900.jpg,2,220006,0.21
+b8b2cfa12ebe0af268bf47aa07a413de,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0010900.jpg,2,220006,0.21
+70bbd3d798e42182860180b8dff96f66,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011161.jpg,2,170118,0.16
+70bbd3d798e42182860180b8dff96f66,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011161.jpg,2,170118,0.16
+dea4f4d6363ad135312defebac34bbbd,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0010938.jpg,2,191954,0.18
+dea4f4d6363ad135312defebac34bbbd,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0010938.jpg,2,191954,0.18
+a61104433dad20a335fb5f289dd77621,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011039.jpg,2,232984,0.22
+a61104433dad20a335fb5f289dd77621,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011039.jpg,2,232984,0.22
+795f69c6fbddbdaebac4efcd29a2fcdf,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011158.jpg,2,192562,0.18
+795f69c6fbddbdaebac4efcd29a2fcdf,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011158.jpg,2,192562,0.18
+5286f0d6aa444711949c607a43a79969,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011166.jpg,2,214523,0.2
+5286f0d6aa444711949c607a43a79969,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011166.jpg,2,214523,0.2
+cc11b61ffb96a6842b19c8564d347921,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0010898.jpg,2,253862,0.24
+cc11b61ffb96a6842b19c8564d347921,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0010898.jpg,2,253862,0.24
+a63fcea682d9f624f18e083455ed9f1c,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011012.jpg,2,63303,0.06
+a63fcea682d9f624f18e083455ed9f1c,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011012.jpg,2,63303,0.06
+25e34bbc40cc485c8614809006019b5d,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011013.jpg,2,72118,0.07
+25e34bbc40cc485c8614809006019b5d,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011013.jpg,2,72118,0.07
+984e9216cb105b1cec0b228fe28092a2,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011007.jpg,2,147669,0.14
+984e9216cb105b1cec0b228fe28092a2,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011007.jpg,2,147669,0.14
+d783422f97a91c2e24d9989435bef174,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0010872.jpg,2,190351,0.18
+d783422f97a91c2e24d9989435bef174,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0010872.jpg,2,190351,0.18
+15556f6b82f9c80022f0451d2b1d0f3d,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0010866.jpg,2,189528,0.18
+15556f6b82f9c80022f0451d2b1d0f3d,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0010866.jpg,2,189528,0.18
+08384d70d12cb71612eadd69af7e5e1b,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0010912.jpg,2,178011,0.17
+08384d70d12cb71612eadd69af7e5e1b,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0010912.jpg,2,178011,0.17
+a5233bb520eb260d2289640ee533a946,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011181.jpg,2,202271,0.19
+a5233bb520eb260d2289640ee533a946,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011181.jpg,2,202271,0.19
+9013cf572c572897dbdf9d5c8c478873,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0010923.jpg,2,166835,0.16
+9013cf572c572897dbdf9d5c8c478873,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0010923.jpg,2,166835,0.16
+9912bfb44e7530954d39433078ca1c88,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011169.jpg,2,139489,0.13
+9912bfb44e7530954d39433078ca1c88,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011169.jpg,2,139489,0.13
+f5fd1005aa2370d5f12f070864f6d85b,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0010934.jpg,2,76235,0.07
+f5fd1005aa2370d5f12f070864f6d85b,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0010934.jpg,2,76235,0.07
+4b59cb4e47360f1e166e41200dd4d105,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0010883.jpg,2,153471,0.15
+4b59cb4e47360f1e166e41200dd4d105,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0010883.jpg,2,153471,0.15
+a4c00a905c2cd52ef8edd84d916bbc29,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0010909.jpg,2,208357,0.2
+a4c00a905c2cd52ef8edd84d916bbc29,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0010909.jpg,2,208357,0.2
+8d295e7a202395cdf46be926f107b27d,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011140.jpg,2,176219,0.17
+8d295e7a202395cdf46be926f107b27d,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011140.jpg,2,176219,0.17
+76c31695ef57d86759c99e9ef1991342,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011178.jpg,2,192520,0.18
+76c31695ef57d86759c99e9ef1991342,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011178.jpg,2,192520,0.18
+46b6306c0a072beb9ee9b1844907ff04,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011187.jpg,2,167983,0.16
+46b6306c0a072beb9ee9b1844907ff04,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011187.jpg,2,167983,0.16
+ce3643b5d9e186724915d0fc020d4e3b,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011193.jpg,2,197051,0.19
+ce3643b5d9e186724915d0fc020d4e3b,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011193.jpg,2,197051,0.19
+1dc6b8efaa6a68c0abeb465f3361eed6,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0010925.jpg,2,191337,0.18
+1dc6b8efaa6a68c0abeb465f3361eed6,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0010925.jpg,2,191337,0.18
+9b8ca0b2591f0d3ae3a4f1a09cd15673,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011030.jpg,2,61052,0.06
+9b8ca0b2591f0d3ae3a4f1a09cd15673,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011030.jpg,2,61052,0.06
+a33f0110fc128688e46ba1e3beff2a60,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011031.jpg,2,171992,0.16
+a33f0110fc128688e46ba1e3beff2a60,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011031.jpg,2,171992,0.16
+1ad81666133d84d55c2d6f9205607d23,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0010878.jpg,2,164284,0.16
+1ad81666133d84d55c2d6f9205607d23,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0010878.jpg,2,164284,0.16
+578ec49707828246ac060be71213c9ca,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011151.jpg,2,193997,0.19
+578ec49707828246ac060be71213c9ca,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011151.jpg,2,193997,0.19
+b7748a7e0cb3366e4d88533b813c6ce3,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0010852.jpg,2,165785,0.16
+b7748a7e0cb3366e4d88533b813c6ce3,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0010852.jpg,2,165785,0.16
+6d08d14dba0327cba260324a124068ae,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011032.jpg,2,268153,0.26
+6d08d14dba0327cba260324a124068ae,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011032.jpg,2,268153,0.26
+5f39cade0af93256b43817e1c745a55c,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0010890.jpg,2,180954,0.17
+5f39cade0af93256b43817e1c745a55c,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0010890.jpg,2,180954,0.17
+6638e66d39709c9d56f3f4f026cf8089,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011185.jpg,2,67281,0.06
+6638e66d39709c9d56f3f4f026cf8089,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011185.jpg,2,67281,0.06
+dce38eefbf80983e62312efc99f82907,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011135.jpg,2,186854,0.18
+dce38eefbf80983e62312efc99f82907,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011135.jpg,2,186854,0.18
+c97cb8a7f1c244fef28a6cc4ab87adbd,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011121.jpg,2,188024,0.18
+c97cb8a7f1c244fef28a6cc4ab87adbd,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011121.jpg,2,188024,0.18
+1fecbed40c940d2f4538e708a19adc09,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0010834.jpg,2,165788,0.16
+1fecbed40c940d2f4538e708a19adc09,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0010834.jpg,2,165788,0.16
+51ad46c34f3fd120b4cc362fd33f2c6c,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011040.jpg,2,181454,0.17
+51ad46c34f3fd120b4cc362fd33f2c6c,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011040.jpg,2,181454,0.17
+072afbd645cef562dd881a186c65e77c,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0010982.jpg,2,169227,0.16
+072afbd645cef562dd881a186c65e77c,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0010982.jpg,2,169227,0.16
+0931ce2176fe447f890a67c3db5c3b1e,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011136.jpg,2,173821,0.17
+0931ce2176fe447f890a67c3db5c3b1e,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011136.jpg,2,173821,0.17
+473a9acd3272a893ac6cddc8d1939113,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011056.jpg,2,210271,0.2
+473a9acd3272a893ac6cddc8d1939113,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011056.jpg,2,210271,0.2
+3de9021bacd936a8de201435b312e056,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011042.jpg,2,152615,0.15
+3de9021bacd936a8de201435b312e056,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011042.jpg,2,152615,0.15
+ae3daeb598c9aeb3b0124b6fb69257e4,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011095.jpg,2,218383,0.21
+ae3daeb598c9aeb3b0124b6fb69257e4,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011095.jpg,2,218383,0.21
+b09d672af8b127256c6479c500d5e191,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011094.jpg,2,270435,0.26
+b09d672af8b127256c6479c500d5e191,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011094.jpg,2,270435,0.26
+e9a8ddb5fa798259bb7a902b1b1faabf,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011043.jpg,2,172869,0.16
+e9a8ddb5fa798259bb7a902b1b1faabf,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011043.jpg,2,172869,0.16
+5b1d7d6fadcd5e8cb75a7fe50b23fe2c,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011057.jpg,2,175244,0.17
+5b1d7d6fadcd5e8cb75a7fe50b23fe2c,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011057.jpg,2,175244,0.17
+c228e21efd01c4e4e868d64b4086c269,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0010942.jpg,2,210245,0.2
+c228e21efd01c4e4e868d64b4086c269,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0010942.jpg,2,210245,0.2
+3105ce58ecaf8232ffde046b718e50e2,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0010995.jpg,2,174427,0.17
+3105ce58ecaf8232ffde046b718e50e2,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0010995.jpg,2,174427,0.17
+37d004627aecf530ea55ca75f3016c55,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011137.jpg,2,181060,0.17
+37d004627aecf530ea55ca75f3016c55,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011137.jpg,2,181060,0.17
+ac436325f594443d2c942f126973ce77,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011052.jpg,2,167118,0.16
+ac436325f594443d2c942f126973ce77,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011052.jpg,2,167118,0.16
+9d0ff0b17d786a49b95d82086d384a54,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0010990.jpg,2,173656,0.17
+9d0ff0b17d786a49b95d82086d384a54,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0010990.jpg,2,173656,0.17
+7fa42b433951b3faf01a671e6bb2355a,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011132.jpg,2,154909,0.15
+7fa42b433951b3faf01a671e6bb2355a,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011132.jpg,2,154909,0.15
+9c64b4e0bc400bc8d2edf64fe5685a2c,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011130.jpg,2,149624,0.14
+9c64b4e0bc400bc8d2edf64fe5685a2c,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011130.jpg,2,149624,0.14
+4181378ec46c60537a7be0dc901cdb5a,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0010979.jpg,2,143169,0.14
+4181378ec46c60537a7be0dc901cdb5a,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0010979.jpg,2,143169,0.14
+64e1d4c8a28de6fd8be9a42026056da3,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011045.jpg,2,159711,0.15
+64e1d4c8a28de6fd8be9a42026056da3,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011045.jpg,2,159711,0.15
+141dcd57f5d1de96993578ec8eefd2d8,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0010978.jpg,2,74323,0.07
+141dcd57f5d1de96993578ec8eefd2d8,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0010978.jpg,2,74323,0.07
+fbd2afcf564f4ece0822fde61f15245f,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0010993.jpg,2,207468,0.2
+fbd2afcf564f4ece0822fde61f15245f,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0010993.jpg,2,207468,0.2
+100b10c91cf01153f1d25d8955f14340,/Users/soneyeoluwasina/Downloads/Skin/Train/melanoma/ISIC_0011125.jpg,2,214485,0.2
+100b10c91cf01153f1d25d8955f14340,/Users/soneyeoluwasina/Downloads/Skin/Train/seborrheic keratosis/ISIC_0011125.jpg,2,214485,0.2
+822bf40ab11ea40b21307071803acedd,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0029460.jpg,2,303601,0.29
+822bf40ab11ea40b21307071803acedd,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0029460.jpg,2,303601,0.29
+9055a85fd28db6a491ccf372b35ad3a0,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0026626.jpg,2,290951,0.28
+9055a85fd28db6a491ccf372b35ad3a0,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0026626.jpg,2,290951,0.28
+eb86a4f7ca2a31f9c9ad1fa9272ebcce,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0027896.jpg,2,291117,0.28
+eb86a4f7ca2a31f9c9ad1fa9272ebcce,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0027896.jpg,2,291117,0.28
+8681d41f0af5108602eaf45b30ebe423,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0028190.jpg,2,252138,0.24
+8681d41f0af5108602eaf45b30ebe423,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0028190.jpg,2,252138,0.24
+dbb6c03925507d948dfc3e9966763bc7,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0026625.jpg,2,301284,0.29
+dbb6c03925507d948dfc3e9966763bc7,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0026625.jpg,2,301284,0.29
+20404f1c9b230af91d3d85633a051556,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0026194.jpg,2,252103,0.24
+20404f1c9b230af91d3d85633a051556,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0026194.jpg,2,252103,0.24
+0f3b2b7c571b5d7b5c359c55d7729240,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0028393.jpg,2,137807,0.13
+0f3b2b7c571b5d7b5c359c55d7729240,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0028393.jpg,2,137807,0.13
+e1101ece28eeb792657b85fcdb21e342,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0027884.jpg,2,241430,0.23
+e1101ece28eeb792657b85fcdb21e342,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0027884.jpg,2,241430,0.23
+ff881d607cef4ed5b0101916ffb9d93a,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0026650.jpg,2,252523,0.24
+ff881d607cef4ed5b0101916ffb9d93a,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0026650.jpg,2,252523,0.24
+4a9d999da13b01ec91337995b4348b6f,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0029210.jpg,2,272519,0.26
+4a9d999da13b01ec91337995b4348b6f,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0029210.jpg,2,272519,0.26
+5b56a7feeeafa1152c0623898048f4b6,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0025953.jpg,2,273040,0.26
+5b56a7feeeafa1152c0623898048f4b6,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0025953.jpg,2,273040,0.26
+9dcccbb73dc7fe64c66c1bee95ba2f58,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0026525.jpg,2,273790,0.26
+9dcccbb73dc7fe64c66c1bee95ba2f58,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0026525.jpg,2,273790,0.26
+0aff80c88427c39d62340d3339ff9438,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0025992.jpg,2,249077,0.24
+0aff80c88427c39d62340d3339ff9438,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0025992.jpg,2,249077,0.24
+b58f533def130ad88a399ac54537b0f3,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0025825.jpg,2,294418,0.28
+b58f533def130ad88a399ac54537b0f3,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0025825.jpg,2,294418,0.28
+16879939742626f3f4670e00e029d5af,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0026848.jpg,2,235871,0.22
+16879939742626f3f4670e00e029d5af,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0026848.jpg,2,235871,0.22
+f483cae644a4d471ed7018e6a1924220,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0026040.jpg,2,245057,0.23
+f483cae644a4d471ed7018e6a1924220,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0026040.jpg,2,245057,0.23
+ace359c2e89d51ce988d917fca02eb4e,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0026905.jpg,2,286887,0.27
+ace359c2e89d51ce988d917fca02eb4e,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0026905.jpg,2,286887,0.27
+0f96baf7dbdc076ee1a97eb238e85632,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0026468.jpg,2,155738,0.15
+0f96baf7dbdc076ee1a97eb238e85632,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0026468.jpg,2,155738,0.15
+d77ce0d37ffd974ebb136d101880ce60,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0027950.jpg,2,166916,0.16
+d77ce0d37ffd974ebb136d101880ce60,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0027950.jpg,2,166916,0.16
+a6e5bc3f62cb97a59f9c0716611bda20,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0026709.jpg,2,301437,0.29
+a6e5bc3f62cb97a59f9c0716611bda20,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0026709.jpg,2,301437,0.29
+5477723c5163e6a8c4d9e02342656e34,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0025957.jpg,2,260619,0.25
+5477723c5163e6a8c4d9e02342656e34,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0025957.jpg,2,260619,0.25
+37a6cdcf1f5067c1d0cf7fc810015c9f,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0027615.jpg,2,263206,0.25
+37a6cdcf1f5067c1d0cf7fc810015c9f,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0027615.jpg,2,263206,0.25
+eb80c506e5eb36871454a3f05a141c33,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0026457.jpg,2,271535,0.26
+eb80c506e5eb36871454a3f05a141c33,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0026457.jpg,2,271535,0.26
+a2c9e899ab41efe11cdab35aae083ed4,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0027562.jpg,2,248041,0.24
+a2c9e899ab41efe11cdab35aae083ed4,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0027562.jpg,2,248041,0.24
+757cdd12ddf122fe17282632df0a60c4,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0027172.jpg,2,254845,0.24
+757cdd12ddf122fe17282632df0a60c4,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0027172.jpg,2,254845,0.24
+d25ce924279dba206ad3d07b789b8977,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0027802.jpg,2,229911,0.22
+d25ce924279dba206ad3d07b789b8977,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0027802.jpg,2,229911,0.22
+253b0e3e74f1a51a1f4e5226760c3913,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0000477.jpg,2,266998,0.25
+253b0e3e74f1a51a1f4e5226760c3913,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0000512.jpg,2,266998,0.25
+cf3b612f90845fa7893941cfd5b499ab,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0026857.jpg,2,277681,0.26
+cf3b612f90845fa7893941cfd5b499ab,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0026857.jpg,2,277681,0.26
+e67c0593ea5ebc6aa972b094f4bb5a9b,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0028517.jpg,2,291607,0.28
+e67c0593ea5ebc6aa972b094f4bb5a9b,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0028517.jpg,2,291607,0.28
+ba2381d69596ee6568e929fde28f8db0,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0025780.jpg,2,260942,0.25
+ba2381d69596ee6568e929fde28f8db0,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0025780.jpg,2,260942,0.25
+4f3a2edf3c26f589c0a2d976060bbc58,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0027829.jpg,2,222294,0.21
+4f3a2edf3c26f589c0a2d976060bbc58,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0027829.jpg,2,222294,0.21
+39a60e04dbbd4aee97aa585955f7ec72,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0029025.jpg,2,265155,0.25
+39a60e04dbbd4aee97aa585955f7ec72,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0029025.jpg,2,265155,0.25
+6a4a1fb4ee412d2612832a4969b79e20,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0027958.jpg,2,304406,0.29
+6a4a1fb4ee412d2612832a4969b79e20,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0027958.jpg,2,304406,0.29
+30137718fd63cf9f5746a758681c41cf,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0028854.jpg,2,277851,0.26
+30137718fd63cf9f5746a758681c41cf,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0028854.jpg,2,277851,0.26
+5a4f819c4083faf013091d3576a6ebeb,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0029141.jpg,2,236726,0.23
+5a4f819c4083faf013091d3576a6ebeb,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0029141.jpg,2,236726,0.23
+e851ddf91a303cd70b16eedc1d540a44,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0026702.jpg,2,279799,0.27
+e851ddf91a303cd70b16eedc1d540a44,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0026702.jpg,2,279799,0.27
+10d023f1d9584349ad664dd00b79ce4d,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0028063.jpg,2,265530,0.25
+10d023f1d9584349ad664dd00b79ce4d,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0028063.jpg,2,265530,0.25
+9070fcc4b8b1b861c84ad008b03a2539,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0027580.jpg,2,237879,0.23
+9070fcc4b8b1b861c84ad008b03a2539,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0027580.jpg,2,237879,0.23
+4133728e571d97738a9fce9b8ffa2629,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0028314.jpg,2,277914,0.27
+4133728e571d97738a9fce9b8ffa2629,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0028314.jpg,2,277914,0.27
+8ed19d8653ada4bb450a66916ca67885,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0025803.jpg,2,312743,0.3
+8ed19d8653ada4bb450a66916ca67885,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0025803.jpg,2,312743,0.3
+d22e17826f8e63143b894c10cdc5cafd,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0026729.jpg,2,246442,0.24
+d22e17826f8e63143b894c10cdc5cafd,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0026729.jpg,2,246442,0.24
+0ca2ca99e96f4e859c76de2593a7f4cf,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0028076.jpg,2,256847,0.24
+0ca2ca99e96f4e859c76de2593a7f4cf,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0028076.jpg,2,256847,0.24
+a89c6226beba02368141c4c98b1777ae,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0026149.jpg,2,231529,0.22
+a89c6226beba02368141c4c98b1777ae,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0026149.jpg,2,231529,0.22
+b7481e5655d9ca8a5d4c0b4b0304c4fd,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0026765.jpg,2,265203,0.25
+b7481e5655d9ca8a5d4c0b4b0304c4fd,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0026765.jpg,2,265203,0.25
+8f56942e016f1b9ee8de34c2af89340c,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0028990.jpg,2,272750,0.26
+8f56942e016f1b9ee8de34c2af89340c,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0028990.jpg,2,272750,0.26
+8af7322448773fdde01a486f2eaf6104,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0027447.jpg,2,282606,0.27
+8af7322448773fdde01a486f2eaf6104,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0027447.jpg,2,282606,0.27
+648f94d4d732f2bf2be6a788dc140fd6,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0028370.jpg,2,276804,0.26
+648f94d4d732f2bf2be6a788dc140fd6,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0028370.jpg,2,276804,0.26
+6be5b72353f573c93ec48c09bfacc483,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0027254.jpg,2,313807,0.3
+6be5b72353f573c93ec48c09bfacc483,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0027254.jpg,2,313807,0.3
+536d74596e3129107cecc776f9310038,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0027650.jpg,2,245792,0.23
+536d74596e3129107cecc776f9310038,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0027650.jpg,2,245792,0.23
+ebfcaf0bafa5e589bf27885743ca398b,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0029133.jpg,2,299092,0.29
+ebfcaf0bafa5e589bf27885743ca398b,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0029133.jpg,2,299092,0.29
+a0fb29e4a426f23123380580257de60b,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0027334.jpg,2,204831,0.2
+a0fb29e4a426f23123380580257de60b,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0027334.jpg,2,204831,0.2
+e9aaa1cb88d4e03db656cf5fab7ca25d,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0027452.jpg,2,291471,0.28
+e9aaa1cb88d4e03db656cf5fab7ca25d,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0027452.jpg,2,291471,0.28
+648d43d51ed10ca78d81a05a0b97180f,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0029309.jpg,2,151314,0.14
+648d43d51ed10ca78d81a05a0b97180f,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0029309.jpg,2,151314,0.14
+91511f5adad41ee044773f5448a0495f,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0026984.jpg,2,258050,0.25
+91511f5adad41ee044773f5448a0495f,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0026984.jpg,2,258050,0.25
+4bb94021360da47962bf04e7f70e4837,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0027668.jpg,2,321848,0.31
+4bb94021360da47962bf04e7f70e4837,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0027668.jpg,2,321848,0.31
+fb058adb30a9a7ef4f034bfe050f99fa,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0027536.jpg,2,281851,0.27
+fb058adb30a9a7ef4f034bfe050f99fa,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0027536.jpg,2,281851,0.27
+1fdc4e420e813d6027b6195a61a0ece6,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0028941.jpg,2,344641,0.33
+1fdc4e420e813d6027b6195a61a0ece6,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0028941.jpg,2,344641,0.33
+6fcaaec91260717f04a7c8a8db2fd25a,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0028558.jpg,2,202086,0.19
+6fcaaec91260717f04a7c8a8db2fd25a,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0028558.jpg,2,202086,0.19
+9d98ba0666104be648d7cf423256076a,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0026575.jpg,2,274739,0.26
+9d98ba0666104be648d7cf423256076a,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0026575.jpg,2,274739,0.26
+9feac2440ece090955547eab3fdfe597,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0026171.jpg,2,321683,0.31
+9feac2440ece090955547eab3fdfe597,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0026171.jpg,2,321683,0.31
+2c6f50cb2c33c3f1d45e2b0029755c6a,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0028820.jpg,2,264410,0.25
+2c6f50cb2c33c3f1d45e2b0029755c6a,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0028820.jpg,2,264410,0.25
+83d854dabfffc837b252ccd9ffcd79a9,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0029041.jpg,2,284761,0.27
+83d854dabfffc837b252ccd9ffcd79a9,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0029041.jpg,2,284761,0.27
+62ff45d19e6b588077627209c0a53966,/Users/soneyeoluwasina/Downloads/Skin/Train/nevus/ISIC_0026212.jpg,2,298308,0.28
+62ff45d19e6b588077627209c0a53966,/Users/soneyeoluwasina/Downloads/Skin/Train/actinic keratosis/ISIC_0026212.jpg,2,298308,0.28

@@ -1,0 +1,2 @@
+hot_cms_updates,cold_cms_updates,total_objects,container_groups,bayesian_confidence,merge_frequency,gc_stats,merge_history_count
+357,0,2200,20,0.8333333333333334,500,"{'runs': 1, 'objects_reclaimed': 1843, 'duplicates_found': 157}",4
