@@ -1,0 +1,22 @@
+# Generated pipeline outputs / datasets
+results_v1/
+results_v2/
+wiki_store/
+wiki_v1/
+wiki_v2/
+comparison.csv
+comparison.json
+
+# Logs
+*.log
+
+# Generated document builds
+RESULTS_AND_DISCUSSION.docx
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS
+.DS_Store

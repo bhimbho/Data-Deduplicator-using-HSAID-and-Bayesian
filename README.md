@@ -1,136 +1,203 @@
-# HSAIDS - Hierarchical Sketches Assisted Inline De-duplication Scheme
+# HSAIDS Chunk-Level Deduplication Prototype
 
-A high-performance duplicate file detection system that uses advanced probabilistic data structures and machine learning techniques to efficiently find duplicate files, even in large-scale file systems.
+This repository now contains two implementations:
 
-## Overview
+- `run_cdc_hsaids.py` and `cdc_hsaids.py`: the current chunk-level HSAIDS prototype.
+- `hard_disk_hsad.py` and `hsaids.py`: the original legacy whole-file duplicate detector.
 
-HSAIDS is an intelligent duplicate file finder that combines multiple optimization techniques to achieve fast and memory-efficient duplicate detection. Unlike traditional approaches that compare every file to every other file, HSAIDS uses hierarchical memory layers, probabilistic data structures, and Bayesian learning to find duplicates quickly.
+The reviewer-facing implementation is the CDC/chunk-level path. It uses variable-size content-defined chunks, stores file recipes, maintains reference counts, writes unique chunks to containers, and keeps a disk-backed cold index in SQLite.
 
-## Key Features
+## Current Architecture
 
-- **Hierarchical Memory System**: Two-layer architecture (hot in RAM, cold in SSD) for optimal performance
-- **Frequency-Sensitive Bloom Filters**: Adapts filter size based on file frequency to reduce false positives
-- **Bayesian Search Optimization**: Learns and adapts lookup strategies over time for better performance
-- **Container Grouping**: Organizes files into groups for improved data locality
-- **Garbage Collection**: Efficient cleanup and duplicate detection during memory reclamation
-- **Recursive Directory Scanning**: Scans all subdirectories automatically
-- **Comprehensive Reporting**: Generates detailed CSV reports with statistics
+The chunk-level path performs:
 
-## Requirements
+1. Recursive file scan.
+2. Content-defined chunking with a deterministic Gear rolling hash.
+3. SHA-256 digest calculation per chunk.
+4. Hot-layer lookup using an in-memory Bloom filter, Count-Min Sketch, and exact hot cache.
+5. Cold-layer lookup using a SQLite-backed chunk index, persisted Bloom filter, and persisted Count-Min Sketch.
+6. Unique chunk writes into append-only container files.
+7. File recipe creation in SQLite, mapping each file to ordered chunk references.
+8. Reference-count updates for duplicate chunks.
+9. Garbage-collection bookkeeping for unreferenced chunks.
+10. Metrics export for dedup ratio, chunk sizes, Bayes-risk costs, and application-level cold-index write amplification.
 
-- Python 3.6+
-- Required packages:
-  - `pandas` (for CSV output)
+## Running The Chunk-Level Experiment
 
-Install dependencies:
-```bash
-pip install pandas
-```
-
-## Usage
-
-### Command Line
+### Quick start (any local directory)
 
 ```bash
-# Scan current directory
-python hard_disk_hsad.py
-
-# Scan a specific directory
-python hard_disk_hsad.py /path/to/directory
-
-# Include hidden files and directories
-python hard_disk_hsad.py --include-hidden
-
-# Disable garbage collection
-python hard_disk_hsad.py --no-gc
-
-# Show verbose progress
-python hard_disk_hsad.py --verbose
-
-# Don't save results to CSV
-python hard_disk_hsad.py --no-save
+python3 run_cdc_hsaids.py /path/to/dataset --reset-store
 ```
 
-### Python Script
+Useful options:
 
-```python
-from hard_disk_hsad import find_duplicate_files
-
-# Find duplicates in a directory
-duplicate_files, unique_files, duplicate_groups, stats = find_duplicate_files(
-    scan_path="/path/to/directory",
-    include_hidden=False,
-    enable_gc=True,
-    verbose=True
-)
+```bash
+python3 run_cdc_hsaids.py /path/to/dataset \
+  --store-dir .hsaids_cdc_store \
+  --output-dir cdc_results \
+  --min-chunk-size 2048 \
+  --avg-chunk-size 8192 \
+  --max-chunk-size 65536 \
+  --hot-capacity 50000 \
+  --reset-store
 ```
 
-### Jupyter Notebook
+The average chunk size must be a power of two because the CDC boundary rule is mask-based.
 
-Use `hsaids.ipynb` for interactive exploration and visualization of the duplicate detection process.
+---
+
+## Wikipedia Evaluation (Multi-GB Workload)
+
+This is the recommended evaluation path to satisfy reviewers requiring multi-gigabyte,
+uncompressed text workloads and demonstrated boundary-shift deduplication.
+
+### Step 1 — Prepare the dataset
+
+```bash
+# Extract up to 500,000 articles from the latest English Wikipedia dump.
+# The dump (~22 GB compressed) is downloaded automatically on first run.
+python3 prepare_wikipedia.py --output wiki_v1 --limit 500000
+
+# Produce a mutated revision (10% of articles altered) to simulate a backup version.
+python3 prepare_wikipedia.py --output wiki_v2 --limit 500000 \
+    --mutate 0.10 --source wiki_v1
+```
+
+To use an existing local dump instead of downloading:
+
+```bash
+python3 prepare_wikipedia.py \
+    --dump-file /path/to/enwiki-latest-pages-articles.xml.bz2 \
+    --output wiki_v1 --limit 500000
+```
+
+### Step 2 — Pass 1: ingest original articles
+
+```bash
+python3 run_cdc_hsaids.py wiki_v1 \
+  --store-dir wiki_store \
+  --output-dir results_v1 \
+  --run-label v1 \
+  --reset-store \
+  --hot-capacity 500000 \
+  --avg-chunk-size 8192
+```
+
+### Step 3 — Pass 2: ingest mutated articles against the same store
+
+Do **not** pass `--reset-store` here — the index from Pass 1 must persist.
+
+```bash
+python3 run_cdc_hsaids.py wiki_v2 \
+  --store-dir wiki_store \
+  --output-dir results_v2 \
+  --run-label v2 \
+  --hot-capacity 500000 \
+  --avg-chunk-size 8192
+```
+
+### Step 4 — Compare passes
+
+```bash
+python3 compare_runs.py \
+  results_v1/hsaids_statistics_v1.json \
+  results_v2/hsaids_statistics_v2.json \
+  --csv comparison.csv \
+  --json comparison.json
+```
+
+The comparison table shows per-pass values and deltas for every reported metric.
+A positive `duplicate_chunk_references` delta in Pass 2 confirms that chunks from
+unmodified article regions were deduplicated across the version boundary — this is
+the evidence of chunk-level (not file-level) deduplication that the reviewer requires.
+
+### Parameter guidance for Wikipedia scale
+
+| Parameter | JPEG run | Wikipedia run | Reason |
+|---|---|---|---|
+| `--hot-capacity` | 50,000 | 500,000 | Millions of unique chunks; avoid premature eviction |
+| `--avg-chunk-size` | 8192 | 8192 | Keep constant to compare realized average |
+
+### Expected output scale
+
+| Metric | Approximate value |
+|---|---|
+| Logical input (Pass 1 + Pass 2) | 80–90 GB |
+| Articles processed | ~500,000 per pass |
+| Unique chunks | Several million |
+| Dedup ratio (Pass 2) | > 1.0 due to cross-version chunk reuse |
 
 ## Output Files
 
-The script generates several CSV files with detailed results:
+The runner writes:
 
-- **`duplicate_files.csv`**: List of all duplicate files with metadata
-- **`unique_files.csv`**: List of unique files (no duplicates found)
-- **`duplicate_groups.csv`**: Files grouped by identical content
-- **`hsaids_statistics.csv`**: Performance metrics and system statistics
+- `cdc_results/hsaids_statistics.csv`
+- `cdc_results/hsaids_statistics.json`
+- `cdc_results/file_summary.csv`
+- `cdc_results/file_recipes.csv`
+- `cdc_results/unique_chunks.csv`
+- `cdc_results/duplicate_chunks.csv`
 
-## How It Works
+Important reported metrics include:
 
-HSAIDS uses a multi-phase approach:
+- `total_chunks_processed`
+- `cold_unique_chunks`
+- `duplicate_chunk_references`
+- `avg_chunk_size`
+- `min_chunk_size`
+- `max_chunk_size`
+- `dedup_ratio`
+- `bayesian_confidence_hot_hit`
+- `bayes_risk_hot_first_ns`
+- `bayes_risk_cold_first_ns`
+- `micro_cost_hot_lookup_ns`
+- `micro_cost_cold_lookup_ns`
+- `micro_cost_verify_ns`
+- `micro_cost_cold_write_ns`
+- `cold_index_logical_bytes_written`
+- `cold_index_physical_bytes_written`
+- `cold_index_waf`
 
-1. **File Hashing**: Each file is hashed using MD5 to create a unique fingerprint
-2. **Hierarchical Lookup**: Checks hot layer (RAM) first, then cold layer (SSD) if needed
-3. **Probabilistic Filtering**: Uses Bloom filters to quickly determine if a file might be a duplicate
-4. **Frequency Tracking**: Count-Min Sketch tracks how often each file appears
-5. **Bayesian Learning**: Adapts lookup strategy based on success patterns
-6. **Container Grouping**: Organizes similar files together for efficient searching
-7. **Garbage Collection**: Periodically cleans up and finds additional duplicates
+## What Changed From The Original Prototype
 
-For a detailed explanation of the algorithms and concepts, see [HSAIDS_EXPLANATION.md](HSAIDS_EXPLANATION.md).
+The original code hashed each file once with MD5 and detected duplicates when whole-file hashes matched. That behavior is still available as a legacy baseline in `hard_disk_hsad.py`, but it should not be used as evidence for block-level deduplication.
 
-## Performance Characteristics
+The current implementation deduplicates chunks. Each file is represented by a recipe of chunk hashes and container locations. Identical chunks across different files or shifted file versions are stored once and referenced multiple times.
 
-- **Time Complexity**: O(n) - linear with number of files
-- **Memory Efficient**: Uses probabilistic data structures instead of storing all file data
-- **Self-Optimizing**: Bayesian optimizer improves performance over time
-- **Scalable**: Handles millions of files efficiently
+## Bayesian Confidence Definition
 
-## Example Output
+The reported Bayesian confidence is not classification accuracy. It is the posterior mean probability that a hot-layer lookup succeeds:
 
-```
-🔍 Scanning directory (recursive): /path/to/directory
-🚀 Initializing HSAIDS...
-📁 Found 10,000 files to process
-🔄 Processing files with HSAIDS...
-  Processed 100/10000 files... (Confidence: 0.85, Groups: 15)
-  ...
-✅ Processing complete!
-   Unique files: 8,500
-   Duplicate files: 1,500
-   Duplicate file groups: 300
-
-📈 HSAIDS Statistics:
-   Bayesian confidence: 0.961
-   Container groups: 42
-   GC objects reclaimed: 1,234
+```text
+P_hot = (alpha + hot_hits) / (alpha + beta + hot_queries)
 ```
 
-## Files in This Repository
+with `alpha = 1` and `beta = 1` in the current implementation.
 
-- **`hsaids.py`**: Core HSAIDS implementation with all algorithms
-- **`hard_disk_hsad.py`**: Main script for finding duplicate files
-- **`hsaids.ipynb`**: Jupyter notebook for interactive use
-- **`HSAIDS_EXPLANATION.md`**: Detailed explanation of how HSAIDS works
+Bayes-risk lookup ordering is based on measured runtime micro-costs:
 
-## License
+```text
+Risk(hot first)  = C_hot + (1 - P_hot)  * C_cold
+Risk(cold first) = C_cold + (1 - P_cold) * C_hot
+```
 
-This project is provided as-is for educational and research purposes.
+The engine chooses the lower-risk lookup order for each chunk.
 
-## Contributing
+## SSD / WAF Scope
 
-Contributions, issues, and feature requests are welcome!
+The cold layer is disk-backed through SQLite. The reported `cold_index_waf` is an application-level write amplification estimate:
 
+```text
+cold_index_waf = physical cold-index file growth / logical cold-index update bytes
+```
+
+This is not the internal NAND flash WAF of a physical SSD controller. To report device-level SSD WAF, the experiment must be run on hardware where block-device write counters or SMART/NVMe telemetry can be sampled before and after the run.
+
+## Testing
+
+```bash
+python3 -m unittest discover -s tests -v
+```
+
+The tests verify that CDC produces multiple variable-size chunks, identical files deduplicate as chunk references, and shifted files can reuse content-defined chunks.
