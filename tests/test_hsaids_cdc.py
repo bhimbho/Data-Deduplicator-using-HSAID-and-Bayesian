@@ -3,7 +3,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from cdc_hsaids import CDCConfig, ChunkLevelHSAIDS, iter_cdc_chunks
+from hsaids.cdc_hsaids import CDCConfig, ChunkLevelHSAIDS, iter_cdc_chunks
 
 
 class ChunkLevelHSAIDSTest(unittest.TestCase):

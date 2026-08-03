@@ -23,7 +23,7 @@ maximum chunk size: 64 KiB
 
 Each chunk is hashed independently with SHA-256 and inserted into the HSAIDS index. Files are represented as ordered recipes in the `files` and `file_chunks` tables, where each recipe entry stores the chunk hash, file offset, chunk size, container ID, and container offset.
 
-The average realized chunk size is not assumed; it is measured during execution and exported as `avg_chunk_size` in `cdc_results/hsaids_statistics.csv`.
+The average realized chunk size is not assumed; it is measured during execution and exported as `avg_chunk_size` in `hsaids_statistics_<label>.csv` under the run's `--output-dir`.
 
 ## Concern 3: If chunking is used on JPEG files, how is the boundary-shift problem handled?
 

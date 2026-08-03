@@ -2,8 +2,8 @@
 
 This repository has two HSAIDS-related paths:
 
-- `cdc_hsaids.py` plus `run_cdc_hsaids.py`: the current chunk-level implementation.
-- `hsaids.py` plus `hard_disk_hsad.py`: the legacy whole-file duplicate detector.
+- `hsaids/cdc_hsaids.py` plus `hsaids/run_cdc_hsaids.py`: the current chunk-level implementation.
+- `hsaids/hsaids.py` plus `hsaids/hard_disk_hsad.py`: the legacy whole-file duplicate detector.
 
 The current implementation should be used for architecture and reviewer discussions.
 
@@ -99,4 +99,4 @@ It is based on SQLite database/WAL/SHM file growth. It does not claim to be NAND
 
 ## Legacy Whole-File Path
 
-The legacy `hard_disk_hsad.py` script computes one MD5 hash per file and detects exact whole-file duplicates. It is useful as a simple baseline, but it should not be presented as block-level or CDC deduplication.
+The legacy `hsaids/hard_disk_hsad.py` script computes one MD5 hash per file and detects exact whole-file duplicates. It is useful as a simple baseline, but it should not be presented as block-level or CDC deduplication.

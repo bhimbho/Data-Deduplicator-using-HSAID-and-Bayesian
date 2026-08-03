@@ -11,7 +11,7 @@ import sqlite3
 from pathlib import Path
 from typing import Dict, Iterable, List
 
-from cdc_hsaids import CDCConfig, ingest_directory
+from hsaids.cdc_hsaids import CDCConfig, ingest_directory
 
 
 def _write_csv(path: Path, rows: Iterable[Dict[str, object]]) -> None:

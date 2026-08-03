@@ -1,17 +1,18 @@
-# Generated pipeline outputs / datasets
-results_v1/
-results_v2/
-wiki_store/
-wiki_v1/
-wiki_v2/
-comparison.csv
-comparison.json
+# Generated datasets (Wikipedia corpus, cold-storage index)
+data/wiki_v1/
+data/wiki_v2/
+data/wiki_store/
+data/wiki_dump_cache/
+
+# Generated comparison/benchmark outputs
+comparisons/results/
+
 
 # Logs
 *.log
 
 # Generated document builds
-RESULTS_AND_DISCUSSION.docx
+docs/RESULTS_AND_DISCUSSION.docx
 
 # Python
 __pycache__/
@@ -20,3 +21,8 @@ __pycache__/
 
 # OS
 .DS_Store
+
+# Vendored TrieDedup: keep source only, not prebuilt binaries/jars
+vendor/triededup/Cpp/bin/
+vendor/triededup/Java/*.jar
+vendor/triededup/Java/lib/

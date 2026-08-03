@@ -1,9 +1,21 @@
 # HSAIDS Chunk-Level Deduplication Prototype
 
-This repository now contains two implementations:
+This repository now contains two implementations, both under `hsaids/`:
 
-- `run_cdc_hsaids.py` and `cdc_hsaids.py`: the current chunk-level HSAIDS prototype.
-- `hard_disk_hsad.py` and `hsaids.py`: the original legacy whole-file duplicate detector.
+- `hsaids/run_cdc_hsaids.py` and `hsaids/cdc_hsaids.py`: the current chunk-level HSAIDS prototype.
+- `hsaids/hard_disk_hsad.py` and `hsaids/hsaids.py`: the original legacy whole-file duplicate detector.
+
+Repository layout:
+
+- `hsaids/` — the core implementation (both chunk-level and legacy whole-file paths).
+- `data_prep/` — dataset preparation scripts (Wikipedia corpus extraction/mutation).
+- `comparisons/` — quantitative comparison against baseline and external de-duplication
+  methods (see `docs/COMPARISON_PLAN.md`); fully separate from `hsaids/` and imports it
+  only through its public API.
+- `docs/` — explanatory documents, results write-ups, and reviewer-response notes.
+- `notebooks/` — analysis/presentation notebooks.
+- `data/` — generated datasets (gitignored).
+- `tests/` — unit tests.
 
 The reviewer-facing implementation is the CDC/chunk-level path. It uses variable-size content-defined chunks, stores file recipes, maintains reference counts, writes unique chunks to containers, and keeps a disk-backed cold index in SQLite.
 
@@ -27,13 +39,13 @@ The chunk-level path performs:
 ### Quick start (any local directory)
 
 ```bash
-python3 run_cdc_hsaids.py /path/to/dataset --reset-store
+python3 -m hsaids.run_cdc_hsaids /path/to/dataset --reset-store
 ```
 
 Useful options:
 
 ```bash
-python3 run_cdc_hsaids.py /path/to/dataset \
+python3 -m hsaids.run_cdc_hsaids /path/to/dataset \
   --store-dir .hsaids_cdc_store \
   --output-dir cdc_results \
   --min-chunk-size 2048 \
@@ -57,27 +69,27 @@ uncompressed text workloads and demonstrated boundary-shift deduplication.
 ```bash
 # Extract up to 500,000 articles from the latest English Wikipedia dump.
 # The dump (~22 GB compressed) is downloaded automatically on first run.
-python3 prepare_wikipedia.py --output wiki_v1 --limit 500000
+python3 data_prep/prepare_wikipedia.py --output data/wiki_v1 --limit 500000
 
 # Produce a mutated revision (10% of articles altered) to simulate a backup version.
-python3 prepare_wikipedia.py --output wiki_v2 --limit 500000 \
-    --mutate 0.10 --source wiki_v1
+python3 data_prep/prepare_wikipedia.py --output data/wiki_v2 --limit 500000 \
+    --mutate 0.10 --source data/wiki_v1
 ```
 
 To use an existing local dump instead of downloading:
 
 ```bash
-python3 prepare_wikipedia.py \
+python3 data_prep/prepare_wikipedia.py \
     --dump-file /path/to/enwiki-latest-pages-articles.xml.bz2 \
-    --output wiki_v1 --limit 500000
+    --output data/wiki_v1 --limit 500000
 ```
 
 ### Step 2 — Pass 1: ingest original articles
 
 ```bash
-python3 run_cdc_hsaids.py wiki_v1 \
-  --store-dir wiki_store \
-  --output-dir results_v1 \
+python3 -m hsaids.run_cdc_hsaids data/wiki_v1 \
+  --store-dir data/wiki_store \
+  --output-dir comparisons/results/hsaids_v1 \
   --run-label v1 \
   --reset-store \
   --hot-capacity 500000 \
@@ -89,9 +101,9 @@ python3 run_cdc_hsaids.py wiki_v1 \
 Do **not** pass `--reset-store` here — the index from Pass 1 must persist.
 
 ```bash
-python3 run_cdc_hsaids.py wiki_v2 \
-  --store-dir wiki_store \
-  --output-dir results_v2 \
+python3 -m hsaids.run_cdc_hsaids data/wiki_v2 \
+  --store-dir data/wiki_store \
+  --output-dir comparisons/results/hsaids_v2 \
   --run-label v2 \
   --hot-capacity 500000 \
   --avg-chunk-size 8192
@@ -100,11 +112,11 @@ python3 run_cdc_hsaids.py wiki_v2 \
 ### Step 4 — Compare passes
 
 ```bash
-python3 compare_runs.py \
-  results_v1/hsaids_statistics_v1.json \
-  results_v2/hsaids_statistics_v2.json \
-  --csv comparison.csv \
-  --json comparison.json
+python3 comparisons/compare_runs.py \
+  comparisons/results/hsaids_v1/hsaids_statistics_v1.json \
+  comparisons/results/hsaids_v2/hsaids_statistics_v2.json \
+  --csv comparisons/results/comparison_v1_v2.csv \
+  --json comparisons/results/comparison_v1_v2.json
 ```
 
 The comparison table shows per-pass values and deltas for every reported metric.
@@ -130,14 +142,14 @@ the evidence of chunk-level (not file-level) deduplication that the reviewer req
 
 ## Output Files
 
-The runner writes:
+The runner writes into whatever `--output-dir` is given (e.g. `comparisons/results/hsaids_v1/`):
 
-- `cdc_results/hsaids_statistics.csv`
-- `cdc_results/hsaids_statistics.json`
-- `cdc_results/file_summary.csv`
-- `cdc_results/file_recipes.csv`
-- `cdc_results/unique_chunks.csv`
-- `cdc_results/duplicate_chunks.csv`
+- `hsaids_statistics_<label>.csv`
+- `hsaids_statistics_<label>.json`
+- `file_summary.csv`
+- `file_recipes.csv`
+- `unique_chunks.csv`
+- `duplicate_chunks.csv`
 
 Important reported metrics include:
 
@@ -161,7 +173,7 @@ Important reported metrics include:
 
 ## What Changed From The Original Prototype
 
-The original code hashed each file once with MD5 and detected duplicates when whole-file hashes matched. That behavior is still available as a legacy baseline in `hard_disk_hsad.py`, but it should not be used as evidence for block-level deduplication.
+The original code hashed each file once with MD5 and detected duplicates when whole-file hashes matched. That behavior is still available as a legacy baseline in `hsaids/hard_disk_hsad.py`, but it should not be used as evidence for block-level deduplication.
 
 The current implementation deduplicates chunks. Each file is represented by a recipe of chunk hashes and container locations. Identical chunks across different files or shifted file versions are stored once and referenced multiple times.
 

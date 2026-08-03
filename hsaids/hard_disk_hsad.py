@@ -18,7 +18,7 @@ Features:
 import os
 import hashlib
 from pathlib import Path
-from hsaids import HSAIDS
+from hsaids.hsaids import HSAIDS
 from collections import defaultdict
 import pandas as pd
 

@@ -5,8 +5,8 @@ side-by-side table showing absolute values and deltas.
 
 Usage
 -----
-    python compare_runs.py results_v1/hsaids_statistics_v1.json \
-                           results_v2/hsaids_statistics_v2.json
+    python comparisons/compare_runs.py comparisons/results/hsaids_v1/hsaids_statistics_v1.json \
+                                       comparisons/results/hsaids_v2/hsaids_statistics_v2.json
 
 Optional flags
 --------------

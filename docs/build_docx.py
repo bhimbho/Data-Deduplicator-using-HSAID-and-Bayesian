@@ -9,10 +9,12 @@ from docx.oxml import OxmlElement
 import json
 from pathlib import Path
 
+REPO_ROOT = Path(__file__).resolve().parent.parent
+
 # ── Load real numbers ──────────────────────────────────────────────────────
-with open("results_v1/hsaids_statistics_v1.json") as f:
+with open(REPO_ROOT / "comparisons/results/hsaids_v1/hsaids_statistics_v1.json") as f:
     s1 = json.load(f)
-with open("results_v2/hsaids_statistics_v2.json") as f:
+with open(REPO_ROOT / "comparisons/results/hsaids_v2/hsaids_statistics_v2.json") as f:
     s2 = json.load(f)
 
 def fmt_bytes(n):
@@ -468,6 +470,6 @@ for title, desc in limitations:
 doc.add_paragraph()
 
 # Save
-out = Path("RESULTS_AND_DISCUSSION.docx")
+out = REPO_ROOT / "docs/RESULTS_AND_DISCUSSION.docx"
 doc.save(str(out))
 print(f"Saved: {out.resolve()}")
