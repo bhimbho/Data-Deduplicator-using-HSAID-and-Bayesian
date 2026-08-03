@@ -209,7 +209,23 @@ This is not the internal NAND flash WAF of a physical SSD controller. To report 
 ## Testing
 
 ```bash
-python3 -m unittest discover -s tests -v
+python3 -m unittest discover -s tests -t . -v
 ```
 
-The tests verify that CDC produces multiple variable-size chunks, identical files deduplicate as chunk references, and shifted files can reuse content-defined chunks.
+The tests verify that CDC produces multiple variable-size chunks, identical files deduplicate as chunk references, and shifted files can reuse content-defined chunks. `tests/comparisons/` covers the naive baseline and the TrieDedup adapter used in `comparisons/` (see below).
+
+## Quantitative Comparison Against Other De-duplication Methods
+
+`comparisons/` benchmarks the Bayesian HSAIDS engine against a naive exact-hash
+baseline and the vendored TrieDedup algorithm on the same chunk sequence, so
+differences in reported numbers come only from the lookup/index strategy, not
+from different chunking. See `docs/COMPARISON_PLAN.md` for the full rationale,
+including why LoopDelta and the learning-based record-deduplication method are
+not benchmarked directly.
+
+```bash
+python3 -m comparisons.run_benchmark /path/to/dataset \
+  --methods naive_hash hsaids_bayesian triededup_trie triededup_pairwise \
+  --trials 5 \
+  --output comparisons/results/benchmark.json
+```
