@@ -30,6 +30,7 @@ import argparse
 import gc
 import json
 import platform
+import random
 import resource
 import shutil
 import statistics
@@ -152,7 +153,17 @@ _METHODS: Dict[str, Callable] = {
 }
 
 
-def run_trials(method_name: str, records: List[Dict[str, object]], trials: int, dedup_ratio: float) -> Dict[str, object]:
+def run_trials(
+    method_name: str,
+    records: List[Dict[str, object]],
+    trials: int,
+    dedup_ratio: float,
+    full_input_chunk_count: int = None,
+) -> Dict[str, object]:
+    """full_input_chunk_count: pass the size of the un-subsampled record set
+    when `records` here is a subsample (e.g. for triededup_pairwise), so the
+    result clearly states both the sample size actually run and the full
+    dataset size it was drawn from."""
     fn = _METHODS[method_name]
     per_trial: List[Dict[str, float]] = []
     peak_rss_samples: List[int] = []
@@ -186,6 +197,10 @@ def run_trials(method_name: str, records: List[Dict[str, object]], trials: int, 
         # across methods regardless of how each one defines "logical input".
         "dedup_ratio": dedup_ratio,
     }
+    if full_input_chunk_count is not None and full_input_chunk_count != len(records):
+        summary["is_subsample"] = True
+        summary["full_dataset_chunk_count"] = full_input_chunk_count
+        summary["sample_fraction"] = len(records) / full_input_chunk_count
 
     for key in ("lookup_latency_mean_ns", "lookup_latency_p50_ns", "lookup_latency_p95_ns", "lookup_latency_p99_ns",
                 "bayes_risk_hot_first_ns", "bayes_risk_cold_first_ns", "bayesian_confidence_hot_hit"):
@@ -206,6 +221,20 @@ def main() -> None:
     parser.add_argument("--avg-chunk-size", type=int, default=8192)
     parser.add_argument("--max-chunk-size", type=int, default=65536)
     parser.add_argument("--output", default=None, help="Write JSON results to this path")
+    parser.add_argument(
+        "--pairwise-sample-size",
+        type=int,
+        default=10_000,
+        help=(
+            "triededup_pairwise is O(n^2); at full Wikipedia scale (hundreds of "
+            "thousands of chunks) it will not finish in a reasonable time. This "
+            "flag draws a fixed-seed random subsample of that size (default "
+            "10,000 chunks) for triededup_pairwise only -- every other method "
+            "still runs on the full chunk set. Pass a number >= the full chunk "
+            "count to disable subsampling."
+        ),
+    )
+    parser.add_argument("--pairwise-sample-seed", type=int, default=1234)
     args = parser.parse_args()
 
     cdc_config = CDCConfig(min_size=args.min_chunk_size, avg_size=args.avg_chunk_size, max_size=args.max_chunk_size)
@@ -218,7 +247,23 @@ def main() -> None:
     results = []
     for method_name in args.methods:
         print(f"[benchmark] Running {method_name}...")
-        results.append(run_trials(method_name, records, args.trials, dedup_ratio))
+        if method_name == "triededup_pairwise" and args.pairwise_sample_size < len(records):
+            rng = random.Random(args.pairwise_sample_seed)
+            method_records = rng.sample(records, args.pairwise_sample_size)
+            method_dedup_ratio = _reference_dedup_ratio(method_records)
+            print(
+                f"[benchmark]   triededup_pairwise is O(n^2); using a "
+                f"{args.pairwise_sample_size}-chunk random subsample "
+                f"(seed={args.pairwise_sample_seed}) of the full {len(records)}-chunk set"
+            )
+        else:
+            method_records = records
+            method_dedup_ratio = dedup_ratio
+        results.append(
+            run_trials(
+                method_name, method_records, args.trials, method_dedup_ratio, full_input_chunk_count=len(records)
+            )
+        )
 
     print(json.dumps(results, indent=2))
     if args.output:
